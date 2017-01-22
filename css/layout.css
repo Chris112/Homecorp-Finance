@@ -1,0 +1,229 @@
+/* index.html */
+#page1 #content .col-1 {width:360px;margin-right:19px}
+#page1 #content .col-2 {width:360px}
+
+.homeBlueTop { 
+	width:175px;
+	float:right;
+	background:#ffd538 url(../images/homeBlueTop.jpg) no-repeat top left; 
+	text-align:center; color:#fff; font-size:14px; 
+	font-family:Georgia, Times New Roman, Times, serif; 
+	margin:0 0 10px 10px; 
+}
+
+.homeBlueBottom { 
+	background:url(../images/homeBlueBottom.jpg) no-repeat bottom left; 
+	padding:4px 0; 
+}
+
+.homeBlueBottom p {
+	margin:0;
+	color: black;
+}
+
+/* index-1.html */
+#page2 #content .col-1 {width:360px;margin-right:19px}
+#page2 #content .col-2 {width:360px}
+
+
+
+p {
+    margin-bottom: 30px;
+}
+p:last-child {
+    margin-bottom: 0;
+}
+
+
+input[type="text"] {
+  display: block;
+  margin: 0;
+  width: 100%;
+  font-family: sans-serif;
+  font-size: 18px;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+}
+input[type="text"]:focus {
+  outline: none;
+}
+
+.results {
+    background: white;
+    padding: 10px 20px;
+    margin-top: -5px;
+    overflow: auto;
+
+}
+
+.results table {
+    min-width: 100%
+}
+
+.results table th {
+    white-space: nowrap;
+    padding: 2px 10px
+}
+
+.results table td {
+    padding: 2px;
+    text-align: center
+}
+
+.form {
+    width: 50%;
+    float: left;
+    font-size: 150%;
+    margin-right: 50px;
+    background-color: #f2f3f4;
+}
+
+.accrue-field-amount{
+	width:80%;
+}
+
+.accrue-field-rate{
+	width:80%;
+}
+
+.accrue-field-term{
+	width:80%;
+}
+
+.accrue-field-term>p>small{
+	font-size: small;
+}
+
+.results {
+	background-color: #f2f3f4;
+}
+
+
+
+
+blockquote:before, blockquote:after {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    font-size: 120px;
+    line-height: 1;
+}
+blockquote:before {
+    top: 0;
+    left: 0;
+    content: "\201C";
+}
+blockquote:after {
+    top: 0;
+    right: 0;
+    content: "\201D";
+}
+
+
+blockquote{
+    text-align: center;
+    font-size: 30px;
+    display: block;
+    max-width: 80%;
+    position: relative;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+blockquote:before, blockquote:after {
+    content:"“";
+    font-size: 70px;
+    font-family:"Georgia", Serif;
+    position: absolute;
+    left: -30px;
+    top: 5px;
+}
+blockquote:after {
+    content:"”";
+    right: -30px;
+    left: auto;
+}
+
+h3 {
+	font-size:150%;
+}
+
+.hr {
+  height: 0px;
+  margin: 0px;
+  border-bottom: 1px solid #FF0000;
+  font-size: 1px;
+}
+
+/* for FAQ list */
+#FAQlist div {
+  //width: 80%;
+}
+
+#FAQlist h2 {
+  font: 400 40px/1.5 Helvetica, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#FAQlist ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#FAQlist li {
+  font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
+  border-bottom: 1px solid #ccc;
+}
+
+#FAQlist li:last-child {
+  border: none;
+}
+
+#FAQlist li a {
+  text-decoration: none;
+  color: #000;
+  display: block;
+  width: 600px;
+
+  -webkit-transition: font-size 0.1s, background-color 0.1s;
+  -moz-transition: font-size 0.1s, background-color 0.1s;
+  -o-transition: font-size 0.1s, background-color 0.1s;
+  -ms-transition: font-size 0.1s, background-color 0.1s;
+  transition: font-size 0.1s, background-color 0.1s;
+}
+
+#FAQlist li a:hover {
+  font-size: 22px;
+  background: #f6f6f6;
+}
+
+/* end FAQ list*/
+
+#map {
+	width:425px;
+	margin:auto;
+}
+
+/* share buttons */
+ul.share-buttons{
+  list-style: none;
+  padding: 0;
+}
+
+ul.share-buttons li{
+  display: inline;
+}
+
+ul.share-buttons .sr-only {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+/* end share buttons */

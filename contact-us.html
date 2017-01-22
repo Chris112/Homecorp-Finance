@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Contact Us | HomeCorp Finance</title>
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+<meta name="description" content="Contact Homecorp Finance and get a fast response">
+<meta name="keywords" content="query, fast, response, contact, us">
+<meta name="author" content="Chris W">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/zerogrid.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/responsive.css" type="text/css" media="all">
+<script type="text/javascript" src="js/jquery-1.4.2.min.js" ></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/css3-mediaqueries.js"></script>
+<!--[if lt IE 7]>
+	<link rel="stylesheet" href="css/ie6.css" type="text/css" media="screen">
+	<script type="text/javascript" src="js/ie_png.js"></script>
+	<script type="text/javascript">
+		ie_png.fix('.png');
+	</script>
+<![endif]-->
+<!--[if lt IE 9]>
+	<script type="text/javascript" src="js/html5.js"></script>
+<![endif]-->
+</head>
+<body id="page5">
+<div class="tail-bottom">
+	<div id="main" class="zerogrid">
+<!-- header -->
+		<header>
+			<div class="nav-box">
+				<nav>
+					<ul class="fright">
+						<li><a href="index.html"><img src="images/pic-home-act.gif"></a></li>
+						<li><a href="contact-us.html"><img src="images/pic-mail.gif"></a></li>
+					</ul>
+					<ul class="normal-menu">
+						<li><a href="index.html">home</a></li>
+						<li><a href="about-us.html">About</a></li>
+						<li><a href="FAQ.html">FAQ</a></li>
+						<li class="current"><a href="contact-us.html">Contact Us</a></li>
+					</ul>
+					<div class='response-menu'>
+						<div><img src='images/menu2.png'/></div>
+						<select onchange="location=this.value">
+							<option></option>
+							<option value="index.html">Home</option>
+							<option value="about-us.html">About</option>
+							<option value="FAQ.html">FAQ</option>
+							<option value="contact-us.html">Contact Us</option>
+						</select>
+					</div>
+				</nav>
+				
+			</div>
+			<h1><a href="index.html"><img src="images/logo.jpg" /></a></h1>
+			<form action="" id="search-form">
+				<fieldset>
+				<input type="text">
+				<a href="#" onclick="document.getElementById('search-form').submit()"><img src="images/button-search.gif"></a>
+				</fieldset>
+			</form>
+		</header>
+		<div class="wrapper indent">
+<!-- content -->
+			<section id="content" class="col-3-4">
+				<div id="slogan"><img src="images/contactus-banner.jpg"></div>
+				<div class="inside">
+					<h2><span>contact</span> us</h2>
+					<div class="wrapper">
+
+						<div id="map">
+							<iframe width="425" scrolling="no" height="350" frameborder="0" src="http://maps.google.com/maps?f=q&amp;hl=en&amp;geocode=&amp;q=307+The+Golden+Way,+GOLDEN+GROVE+SA+5125&amp;sll=37.0625,-95.677068&amp;sspn=60.894251,105.644531&amp;ie=UTF8&amp;ll=-34.776799,138.708315&amp;spn=0.031371,0.051584&amp;z=14&amp;iwloc=cent&amp;output=embed&amp;s=AARTsJqRuoB2rAvlZQH_ICaMGecvQAarxw" marginwidth="0" marginheight="0"></iframe>
+						</div>	
+						<br><br>
+
+
+						<address>
+						<b>Email:</b>admin@homecorpfinance.com.au <br>
+						<b>Telephone:</b>(08) 8251 5222 <br>
+						<b>Fax:</b>(08) 8251 5444 <br>
+						<b>Address:</b> PO Box 374 <br> GREENWITH SA 5125<br>
+						</address>
+
+					
+
+							Feel free to contact the office closest to you on the numbers to the side or simply enter your details below along with any questions or queries you may have. One of our Accredited Mortgage Consultants will make contact with you within 4 hours!
+						</p>	
+
+					</div>
+				</div>
+				<div class="box">
+					<div class="border-right">
+						<div class="border-bot">
+							<div class="border-left">
+								<div class="left-top-corner">
+									<div class="right-top-corner">
+										<div class="inner">
+											<h2><span>Contact</span> Form</h2>
+											<form id="contacts-form" action="email_form.php" method="POST">
+												<fieldset>
+												<div class="field">
+													<label>Name:</label>
+													<input type="text" name="name" value=""/>
+												</div>
+												<div class="field">
+													<label>E-mail:</label>
+													<input type="email" name="email" value=""/>
+												</div>
+												<div class="field">
+													<label>Phone Number:</label>
+													<input type="text" name="contactNumber" value=""/>
+												</div>
+												<div class="field">
+													<label>Your Message:</label>
+													<textarea cols="1" rows="1" name="message"></textarea>
+												</div>
+												<div class="wrapper">
+													<label>&nbsp;</label>
+													<input type="submit" value="Submit">
+												</fieldset>
+												<div id='result' style="text-align: center;vertical-align: middle;line-height: 90px;font-size:30px;"></div>
+											</form>
+											<script>
+												$('#contacts-form').submit(function(event) {
+													event.preventDefault();
+													$.ajax({
+														type: "POST",
+														url: "email_form.php",
+														data: $(this).serialize(),		
+														success: function(data){
+															$('#result').html(data);
+														}					
+													});
+												});
+											</script>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+<!-- aside -->
+			<aside class="col-1-4">
+				<div class="inside">
+					<a href="https://www.mfaa.com.au/Pages/homepage.aspx"><img src="images/mfaa.gif" style="max-width:130px"></a><br><br>
+					<ul class="insurance">
+						<li><strong>Worried about credit?</strong>Are you unsure about the content of your credit file? Click here to access info on a free credit check and receive a response ASAP</li>
+						<li><strong>Home Loans</strong>We manage the process from application through to successful settlement on your behalf, browse our loan products <a href="/homecorp/loan-products.html">here</a> </li>
+						<li><strong>What interest rate is best for you?</strong>We have many competitive rates available from a wide range of Lenders, so make an enquiry now!</li>
+						<li><strong>Refinancing</strong>Refinance home loans and you could end up with a cheaper home loan which better suits your needs.</li>
+						<li><strong>Quick Response</strong>Send us an email with any queries you have about Home Loans or just Finance in general and we will make contact with you within 4 working hours!!</li>
+
+						<div class="homeBlueTop">
+							<div class="homeBlueBottom">
+								<p>Contact Us 24 hours<br>
+								a day - any day!<br>
+								0400 341 311</p>
+							</div>
+						</div>
+
+					</ul>
+					<h2><span>Our</span> services</h2>
+					<ul class="services">
+						<li><a href="/homecorp/loan-products.html">Loan Products</a></li>
+						<li><a href="/homecorp/credit-checks.html">Free Credit Checks</a></li>
+						<li><a href="/homecorp/homeloan-calculator.html">Loan Repayment Calculator</a></li>
+						<li><a href="/homecorp/about-us.html">About Homecorp Finance</a></li>
+						<li><a href="/homecorp/business-partners.html">Business Partners</a></li>
+						<li><a href="/homecorp/contact-us.html">Make an enquiry</a></li>
+						<li><a href="/homecorp/FAQ.html">Frequently Asked Questions</a></li>
+					</ul>
+				</div>
+			</aside>
+		</div>
+<!-- footer -->
+		<footer>
+
+			<div class="inside">
+			<ul class="share-buttons">
+				<li><a href="https://www.facebook.com/pg/homecorpfinance/about/" target="_blank" onclick="window.open('https://www.facebook.com/pg/homecorpfinance/about/'); return false;"><img alt="Visit on Facebook" src="images/Facebook.png"></a></li>
+  				<li><a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fwww.imchrisw.com%2Fhomecorp2%2F&text=:%20http%3A%2F%2Fwww.imchrisw.com%2Fhomecorp2%2F" target="_blank" title="Tweet" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(document.title) + ':%20'  + encodeURIComponent(document.URL)); return false;"><img alt="Tweet" src="images/Twitter.png"></a></li>
+  				<li><a href="mailto:?subject=&body=:%20http%3A%2F%2Fwww.imchrisw.com%2Fhomecorp2%2F" target="_blank" title="Send email" onclick="window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&body=' +  encodeURIComponent(document.URL)); return false;"><img alt="Send email" src="images/Email.png"></a></li>
+			</ul><br>
+				Website by <a href="http://www.imchrisw.com">Chris</a> <br>
+				<a href="/homecorp/privacy-policy.html"> Privacy</a> | <a href="/homecorp/disclaimer.html"> Disclaimer</a> | <a href="/homecorp/sitemap.html"> Sitemap</a>
+			</div>
+		</footer>
+	</div>
+</div>
+</body>
+</html>

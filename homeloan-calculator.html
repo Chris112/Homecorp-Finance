@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home | HomeCorp Finance</title>
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+<meta name="description" content="Homeloan Calculator: Calculate how much you can borrow">
+<meta name="keywords" content="Homeloan, calculator, loans, interest">
+<meta name="author" content="Chris W">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/zerogrid.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/responsive.css" type="text/css" media="all">
+<script type="text/javascript" src="js/maxheight.js"></script>
+<script type="text/javascript" src="js/jquery-1.4.2.min.js" ></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/css3-mediaqueries.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="js/jquery.accrue.min.js"></script>
+
+
+
+<!--[if lt IE 7]>
+	<link rel="stylesheet" href="css/ie6.css" type="text/css" media="screen">
+	<script type="text/javascript" src="js/ie_png.js"></script>
+	<script type="text/javascript">
+		ie_png.fix('.png');
+	</script>
+<![endif]-->
+<!--[if lt IE 9]>
+	<script type="text/javascript" src="js/html5.js"></script>
+<![endif]-->
+</head>
+<body id="page1" onLoad="new ElementMaxHeight();">
+<div class="tail-bottom">
+	<div id="main" class="zerogrid">
+<!-- header -->
+		<header>
+			<div class="nav-box">
+				<nav>
+					<ul class="fright">
+						<li><a href="index.html"><img src="images/pic-home-act.gif"></a></li>
+						<li><a href="contact-us.html"><img src="images/pic-mail.gif"></a></li>
+					</ul>
+					<ul class="normal-menu">
+						<li class="current"><a href="index.html">home</a></li>
+						<li><a href="about-us.html">About</a></li>
+						<li><a href="FAQ.html">FAQ</a></li>
+						<li><a href="contact-us.html">Contact Us</a></li>
+					</ul>
+					<div class='response-menu'>
+						<div><img src='images/menu2.png'/></div>
+						<select onchange="location=this.value">
+							<option></option>
+							<option value="index.html">Home</option>
+							<option value="about-us.html">About</option>
+							<option value="FAQ.html">FAQ</option>
+							<option value="contact-us.html">Contact Us</option>
+						</select>
+					</div>
+				</nav>
+				
+			</div>
+			<h1><a href="index.html"><img src="images/logo.jpg" /></a></h1>
+			<form action="" id="search-form">
+				<fieldset>
+				<input type="text">
+				<a href="#" onclick="document.getElementById('search-form').submit()"><img src="images/button-search.gif"></a>
+				</fieldset>
+			</form>
+		</header>
+		<div class="wrapper indent">
+
+<style>
+#style-4 input[type="text"] {
+  padding: 10px;
+  border: none;
+  border-bottom: solid 2px #c9c9c9;
+  transition: border 0.3s;
+}
+#style-4 input[type="text"]:focus,
+#style-4 input[type="text"].focus {
+  border-bottom: solid 2px #969696;
+}
+
+</style>
+
+<!-- content -->
+			<section id="content" class="col-3-4">
+				<div id="slogan"><img src="images/homeloan_calc.jpg"></div>
+				<div class="inside">
+				<h2><span>Home loan</span> Calculator </h2>
+				<p>
+				Whether you’re moving home, buying your first property, investing or refinancing, our calculator will give you a feel for what your payments might look like each month.
+				</p>
+
+
+					<div class="calculator"></div>
+
+					<script>
+					$(document).ready(function(){
+					    $(".calculator").accrue();
+					});
+					</script>
+					<br><hr><br>
+					<h3>Important information</h3><br>
+					<p>A few things to keep in mind. This calculator is only a guide. Our best calculators are really our brokers. They’ll be able to help you find the right loan in amongst thousands across the market. To learn more about your borrowing capacity, please get in touch with us.
+					</p>
+
+					
+					</div>
+
+
+				</section>
+
+
+
+		<!-- aside -->
+			<aside class="col-1-4">
+				<div class="inside">
+					<a href="https://www.mfaa.com.au/Pages/homepage.aspx"><img src="images/mfaa.gif" style="max-width:130px"></a><br><br>
+					<ul class="insurance">
+						<li><strong>Worried about credit?</strong>Are you unsure about the content of your credit file? Click here to access info on a free credit check and receive a response ASAP</li>
+						<li><strong>Home Loans</strong>We manage the process from application through to successful settlement on your behalf, browse our loan products <a href="/homecorp/loan-products.html">here</a> </li>
+						<li><strong>What interest rate is best for you?</strong>We have many competitive rates available from a wide range of Lenders, so make an enquiry now!</li>
+						<li><strong>Refinancing</strong>Refinance home loans and you could end up with a cheaper home loan which better suits your needs.</li>
+						<li><strong>Quick Response</strong>Send us an email with any queries you have about Home Loans or just Finance in general and we will make contact with you within 4 working hours!!</li>
+
+						<div class="homeBlueTop">
+							<div class="homeBlueBottom">
+								<p>Contact Us 24 hours<br>
+								a day - any day!<br>
+								0400 341 311</p>
+							</div>
+						</div>
+
+					</ul>
+					<h2><span>Our</span> services</h2>
+					<ul class="services">
+						<li><a href="/homecorp/loan-products.html">Loan Products</a></li>
+						<li><a href="/homecorp/credit-checks.html">Free Credit Checks</a></li>
+						<li><a href="/homecorp/homeloan-calculator.html">Loan Repayment Calculator</a></li>
+						<li><a href="/homecorp/about-us.html">About Homecorp Finance</a></li>
+						<li><a href="/homecorp/business-partners.html">Business Partners</a></li>
+						<li><a href="/homecorp/contact-us.html">Make an enquiry</a></li>
+						<li><a href="/homecorp/FAQ.html">Frequently Asked Questions</a></li>
+					</ul>
+				</div>
+			</aside>
+		</div>
+<!-- footer -->
+		<footer>
+
+			<div class="inside">
+			<ul class="share-buttons">
+				<li><a href="https://www.facebook.com/pg/homecorpfinance/about/" target="_blank" onclick="window.open('https://www.facebook.com/pg/homecorpfinance/about/'); return false;"><img alt="Visit on Facebook" src="images/Facebook.png"></a></li>
+  				<li><a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fwww.imchrisw.com%2Fhomecorp2%2F&text=:%20http%3A%2F%2Fwww.imchrisw.com%2Fhomecorp2%2F" target="_blank" title="Tweet" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(document.title) + ':%20'  + encodeURIComponent(document.URL)); return false;"><img alt="Tweet" src="images/Twitter.png"></a></li>
+  				<li><a href="mailto:?subject=&body=:%20http%3A%2F%2Fwww.imchrisw.com%2Fhomecorp2%2F" target="_blank" title="Send email" onclick="window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&body=' +  encodeURIComponent(document.URL)); return false;"><img alt="Send email" src="images/Email.png"></a></li>
+			</ul><br>
+				Website by <a href="http://www.imchrisw.com">Chris</a> <br>
+				<a href="/homecorp/privacy-policy.html"> Privacy</a> | <a href="/homecorp/disclaimer.html"> Disclaimer</a> | <a href="/homecorp/sitemap.html"> Sitemap</a>
+			</div>
+		</footer>
+	</div>
+</div>
+</body>
+</html>
